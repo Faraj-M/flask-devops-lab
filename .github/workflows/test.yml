@@ -22,3 +22,8 @@ jobs:
 
       - name: Run tests with coverage
         run: pytest --cov=app test_app.py
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}  # Add in Repo Settings → Secrets and variables → Actions
