@@ -24,7 +24,7 @@ jobs:
         run: pytest --cov=app test_app.py
 
       - name: Upload coverage to Codecov
-        if: ${{ secrets.CODECOV_TOKEN != '' }}
+        if: ${{ secrets.CODECOV_TOKEN }}
         uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}  # Add in Repo Settings → Secrets and variables → Actions
