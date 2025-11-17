@@ -18,7 +18,7 @@ h2==4.3.0
 hpack==4.1.0
 Hypercorn==0.17.3
 hyperframe==6.1.0
-idna==3.10
+idna==3.11
 iniconfig==2.1.0
 itsdangerous==2.2.0
 Jinja2==3.1.6
